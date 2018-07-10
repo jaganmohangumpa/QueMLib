@@ -1,0 +1,86 @@
+***********************************************************************************************
+
+ 
+                 	(c) Copyright 2018 Redpine Signals Inc. 
+                                       All rights reserved.
+ 
+     This file is protected by international copyright laws. This file can only be used in
+     accordance with a license and should not be redistributed in any way without written
+     permission by Redpine Signals.
+ 
+									www.redpinesignals.com
+
+***********************************************************************************************
+Release            : QueMLib 2.0a
+Software Component : ML & BLAS
+Date               : 18/06/2018           
+***************************************************************
+
+Release Status:
+===============
+
+	Test         ( )
+	Alpha        (*)
+	Beta         ( )
+	Production   ( )
+****************************************************************
+
+Project description: QueMLib - is an extensive set of readily available machine learning functions that designer can easily embed directly into their applications.
+====================
+
+Test Board: QueSSence
+====================
+
+Assistance tool:None
+====================
+
+Assistance software: Keil IDE
+====================
+
+New Features:None
+=============
+
+QueMLib_2.0a/
+├── Applications
+│   ├── Gesture_Recognition
+│   │   ├── Applications
+│   │   ├── IDE
+│   │   ├── Libraries
+│   │   ├── Utility/
+│   │   
+│   └── Gesture_Recognition.pdf
+├── BLAS
+│   ├── EXAMPLES
+│   │   ├── blas_leve2_int_16_example.c
+│   │   ├── blas_level_1_float_example.c---Scalar-Vector and Vector-Vector operations.
+│   │   ├── blas_level1_int_16_example.c
+│   │   ├── blas_level1_int_32_example.c
+│   │   ├── blas_level2_float_example.c---Matrix-Vector operations.
+│   │   ├── blas_level2_int_32_example.c
+│   │   └── blas_level_3_example.c---Matrix-Matrix operations.
+│   └── LIB
+│       └── blas_lib.lib
+├── Docs
+│   └── QueMLib.pdf
+├── ML_Algorithms
+│   ├── Examples
+│   │   ├── id3_example.c--ID3 Decision Tree classification algorithm for Discrete classes
+│   │   ├── kmeans_example.c--The kmeans algorithm clusters data by trying to separate samples in n groups of equal samples.
+│   │   ├── knn_seed_example.c---K-Nearest Neighbors one of the instance based classification algorithm
+│   │   ├── linear_regression_main.c--Simple linear regression algorithm y = mx+c
+│   │   └── logistic_example.c
+│   └── LIB
+│       └── QueMlib.lib
+
+
+
+Changes / Issues fixed : 1) KNN+DTW merged, so user can compute DTW distance by passing 'd' character in KNN API, and WINDOW parameter 
+======================   2) Logistic regresssion train_Y columns changed to one dimension array.
+			 3) Logistic regresssion coefficients  estimate using stochastic gradient descent.
+
+Features NOT Supported: 1) ID3 algorithm works for only provided example data sets
+======================  2) Logistic regresssion works for only normilized values Please refer examples porivided
+			
+
+
+
